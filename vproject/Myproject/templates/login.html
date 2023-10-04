@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'css/login.css' %}">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <title>Document</title>
+</head>
+<body>
+    <section class="login">
+        <div class="container">
+            <h1>Login Form</h1>
+            <div class="lgn">
+                <a href="#" id="login" class="hover_btn">Login</a>
+                
+            </div>
+            <input type="text" id="email" placeholder="Email Adress">
+            <input type="email" id="pass" placeholder="Pasword">
+            <div class="forget">
+                <a href="#" id="fgpass">Forgot Password</a>
+            </div>
+            <a href="{% url 'home' %}" id="loginBtn" class="hover_btn">Login</a>
+            <div class="sgnUp">
+                <p id="member">Not A Member?</p>
+                <a href="#" id="sgn_now">SignUp Now</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
